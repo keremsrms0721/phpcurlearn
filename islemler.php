@@ -1,12 +1,17 @@
 <?php
  
- 
+$uye = array(
+ "id" => 1,
+  "name" => "kerem",
+  "surname" => "kağan"
+); 
+
  switch(@$_GET["islem"]):
  
  
  case "normal":
  
- echo 'Selam';
+echo json_encode($uye);
  
  break;
  
